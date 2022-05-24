@@ -19,8 +19,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  transform: translateY(-4rem);
-  transform: translateY(7rem);
+  transform: translateY(5rem);
   color: white;
 }
 
@@ -153,9 +152,9 @@ body {
   }
 
   .accordian {
-    transform: translateY(5rem);
+    transform: translateY(3rem);
     width: 80vw !important;
-    min-height: 25vh !important;
+    min-height: 69vh !important;
     grid-template-rows: 15rem 1fr;
     grid-template-columns: auto;
     overflow: unset;
@@ -202,11 +201,6 @@ body {
   }
 
   .attribution {
-    transform: translateY(7rem);
-    color: white;
-  }
-
-  .attribution a {
-    color: lightblue;
+    transform: translateY(7rem) !important;
   }
 }
