@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section class="accordian">
+      <div class="image">
+        <img
+          src="images/illustration-woman-online-desktop.svg"
+          alt=""
+          class="women-img"
+        />
+        <img src="images/illustration-box-desktop.svg" alt="" class="box" />
+      </div>
+      <div class="main-content">
+        <h2 class="accordian-heading">FAQ</h2>
+        <div class="accordian-questions">
+          <div class="question-box">
+            <div class="question">
+              <p>How many team members can I invite?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="arrow transition"
+              />
+            </div>
+            <div class="answers transition hidden">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              <p class="">What is the maximum file upload size?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="arrow transition"
+              />
+            </div>
+            <div class="answers transition hidden">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              <p>How do I reset my password?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="arrow transition"
+              />
+            </div>
+            <div class="answers transition hidden">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              <p>Can I cancel my subscription?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="arrow transition"
+              />
+            </div>
+            <div class="answers transition hidden">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              <p>Do you provide additional support?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="arrow transition"
+              />
+            </div>
+            <div class="answers transition hidden">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/sid_sing">Siddhart Singh</a>.
+    </div>
+  </body>
+</html>

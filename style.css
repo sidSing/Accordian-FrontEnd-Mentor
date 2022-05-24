@@ -1,0 +1,209 @@
+:root {
+  --dextop: 1440px;
+  --mobile: 375px;
+  --text-dark-blue: hsl(238, 29%, 16%);
+  --text-soft-red: hsl(14, 88%, 65%);
+  --text-very-grayish-blue: hsl(237, 12%, 33%);
+  --text-grayish-blue: hsl(240, 6%, 50%);
+  --text-light-grayish-blue: hsl(240, 5%, 91%);
+  --body-font: 12px;
+  --font-regular: 400;
+  --font-heavy: 700;
+  --background-gradient: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  transform: translateY(-4rem);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
+}
+
+.transition {
+  transition: all 0.25s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  background: var(--background-gradient);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.accordian {
+  background: white;
+  width: 105rem;
+  height: 60rem;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+}
+
+.image {
+  background: url("images/bg-pattern-desktop.svg") no-repeat;
+  background-position-x: 122%;
+  background-position-y: 68%;
+  background-size: 115rem;
+}
+
+.women-img {
+  position: relative;
+  top: 50%;
+  transform: translate(-18%, -48%);
+}
+
+.box {
+  position: absolute;
+  left: 23%;
+  top: 50%;
+  transform: translate(-52%, -20%);
+  z-index: 1;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  padding-top: 4.8rem;
+  padding-right: 9.6rem;
+}
+
+.accordian-heading {
+  align-self: center;
+  justify-content: start;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+.accordian-questions {
+  height: 100%;
+}
+
+.question-box {
+  border-bottom: 1px solid var(--text-light-grayish-blue);
+  padding: 1.8rem 0;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.question p {
+  color: var(--text-very-grayish-blue);
+}
+
+.question-box:hover > .question > p {
+  color: var(--text-soft-red);
+}
+
+.active > .question > p {
+  font-weight: 700;
+  color: var(--text-dark-blue);
+}
+
+.active > .question > .arrow {
+  transform: rotate(180deg);
+}
+
+.active > .answers {
+  font-size: 1.6rem;
+  color: var(--text-grayish-blue);
+  margin-top: 1rem;
+  display: block;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+
+  .accordian {
+    transform: translateY(5rem);
+    width: 80vw !important;
+    min-height: 25vh !important;
+    grid-template-rows: 15rem 1fr;
+    grid-template-columns: auto;
+    overflow: unset;
+    padding: 0 4rem;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .women-img {
+    width: 60vw;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+  }
+
+  .image {
+    background: url("images/bg-pattern-mobile.svg") no-repeat;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: 60vw;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .accordian-heading {
+    text-align: center;
+  }
+
+  .question {
+    font-size: 1.5rem;
+  }
+
+  .question-box:hover > .question > p {
+    color: var(--text-dark-blue);
+  }
+
+  .attribution {
+    transform: translateY(7rem);
+    color: white;
+  }
+
+  .attribution a {
+    color: lightblue;
+  }
+}
