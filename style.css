@@ -195,6 +195,9 @@ body {
   .question {
     font-size: 1.5rem;
   }
+  
+  .active > .answers{
+    font-size 1.5rem;
 
   .question-box:hover > .question > p {
     color: var(--text-dark-blue);
